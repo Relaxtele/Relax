@@ -1,11 +1,5 @@
 --[[
 
-░██████╗██████╗░██╗░░░██╗██████╗░███████╗██████╗░ 
- ██╔════╝██╔══██╗╚██╗░██╔╝██╔══██╗██╔════╝██╔══██╗
- ╚█████╗░██████╔╝░╚████╔╝░██║░░██║█████╗░░██████╔╝
- ░╚═══██╗██╔═══╝░░░╚██╔╝░░██║░░██║██╔══╝░░██╔══██╗
- ██████╔╝██║░░░░░░░░██║░░░██████╔╝███████╗██║░░██║
- ╚═════╝░╚═╝░░░░░░░░╚═╝░░░╚═════╝░╚══════╝╚═╝░░╚═╝
 - Done Installations Source Relax 
  - Thanks For your use Source Relax
  ══════════════════════════════    
@@ -27,12 +21,6 @@ print("\27[34m"..[[
 >> Best Source in Telegram
 >> Features fast and powerful
 
-░██████╗██████╗░██╗░░░██╗██████╗░███████╗██████╗░ 
- ██╔════╝██╔══██╗╚██╗░██╔╝██╔══██╗██╔════╝██╔══██╗
- ╚█████╗░██████╔╝░╚████╔╝░██║░░██║█████╗░░██████╔╝
- ░╚═══██╗██╔═══╝░░░╚██╔╝░░██║░░██║██╔══╝░░██╔══██╗
- ██████╔╝██║░░░░░░░░██║░░░██████╔╝███████╗██║░░██║
- ╚═════╝░╚═╝░░░░░░░░╚═╝░░░╚═════╝░╚══════╝╚═╝░░╚═╝
 - Done Installations Source Relax 
  - Thanks For your use Source Relax
  ══════════════════════════════    
@@ -367,7 +355,7 @@ ID="InputMessageAudio",
 audio_ = GetInputFile(audio),
 duration_ = "",
 title_ = title or "",
-performer_ = "سورس سبايدر الرسمي",
+performer_ = "سورس ريلاكس الرسمي",
 caption_ = caption or ""
 }},func or dl_cb,nil)
 end
@@ -3265,19 +3253,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local Relaxrt = database:get(bot_id.."Relax:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
 if Relaxrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n⌔∮ تم رفعه "..RTPA.." هنا\n")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "aaaZaa")..")".."\n⌔∮ تم رفعه "..RTPA.." هنا\n")   
 database:set(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA) 
 database:sadd(bot_id.."Relax:Special:User"..msg.chat_id_,result.sender_user_id_)  
 elseif Relaxrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n⌔∮ تم رفعه "..RTPA.." هنا\n")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "aaaZaa")..")".."\n⌔∮ تم رفعه "..RTPA.." هنا\n")   
 database:set(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)
 database:sadd(bot_id.."Relax:Mod:User"..msg.chat_id_,result.sender_user_id_)  
 elseif Relaxrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n⌔∮ تم رفعه "..RTPA.." هنا\n")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "aaaZaa")..")".."\n⌔∮ تم رفعه "..RTPA.." هنا\n")   
 database:set(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)  
 database:sadd(bot_id.."Relax:Manager"..msg.chat_id_,result.sender_user_id_)  
 elseif Relaxrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n⌔∮ تم رفعه "..RTPA.." هنا\n")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "aaaZaa")..")".."\n⌔∮ تم رفعه "..RTPA.." هنا\n")   
 end
 end,nil)   
 end   
@@ -3300,19 +3288,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local Relaxrt = database:get(bot_id.."Relax:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
 if Relaxrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n⌔∮ تم تنزيله من "..RTPA.." هنا\n")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "aaaZaa")..")".."\n⌔∮ تم تنزيله من "..RTPA.." هنا\n")   
 database:srem(bot_id.."Relax:Special:User"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif Relaxrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n⌔∮ تم تنزيله من "..RTPA.." هنا\n")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "aaaZaa")..")".."\n⌔∮ تم تنزيله من "..RTPA.." هنا\n")   
 database:srem(bot_id.."Relax:Mod:User"..msg.chat_id_,result.sender_user_id_) 
 database:del(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif Relaxrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n⌔∮ تم تنزيله من "..RTPA.." هنا\n")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "aaaZaa")..")".."\n⌔∮ تم تنزيله من "..RTPA.." هنا\n")   
 database:srem(bot_id.."Relax:Manager"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif Relaxrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n⌔∮ تم تنزيله من "..RTPA.." هنا\n")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "aaaZaa")..")".."\n⌔∮ تم تنزيله من "..RTPA.." هنا\n")   
 end
 end,nil)   
 end   
@@ -3335,19 +3323,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local Relaxrt = database:get(bot_id.."Relax:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if Relaxrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n⌔∮ تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "aaaZaa")..")".."\n⌔∮ تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."Relax:Special:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif Relaxrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n⌔∮ تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "aaaZaa")..")".."\n⌔∮ تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."Relax:Mod:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif Relaxrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n⌔∮ تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "aaaZaa")..")".."\n⌔∮ تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."Relax:Manager"..msg.chat_id_,result.id_)  
 database:set(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif Relaxrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n⌔∮ تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "aaaZaa")..")".."\n⌔∮ تم رفعه "..text1[2].." هنا")   
 end
 else
 info = "⌔∮ المعرف غلط"
@@ -3373,19 +3361,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local Relaxrt = database:get(bot_id.."Relax:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if Relaxrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n⌔∮ تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "aaaZaa")..")".."\n⌔∮ تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."Relax:Special:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif Relaxrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n⌔∮ تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "aaaZaa")..")".."\n⌔∮ تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."Relax:Mod:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif Relaxrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n⌔∮ تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "aaaZaa")..")".."\n⌔∮ تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."Relax:Manager"..msg.chat_id_,result.id_)  
 database:del(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif Relaxrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n⌔∮ تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"\n⌔∮ العضو ›› ["..result.title_.."](t.me/"..(text1[3] or "aaaZaa")..")".."\n⌔∮ تم تنريله من "..text1[2].." هنا")   
 end
 else
 info = "⌔∮ المعرف غلط"
@@ -5750,7 +5738,7 @@ if DevRelax(msg) then
 database:srem(bot_id.."Relax:GBan:User",result.id_)
 database:srem(bot_id.."Relax:Ban:User"..msg.chat_id_,result.id_)
 database:srem(bot_id.."Relax:Muted:User"..msg.chat_id_,result.id_)
-usertext = "\n⌔∮  العضو ›› ["..result.title_.."](t.me/"..(username or "kenwa")..")"
+usertext = "\n⌔∮  العضو ›› ["..result.title_.."](t.me/"..(username or "aaaZaa")..")"
 status  = "\n⌔∮  تم الغاء القيود عنه"
 texts = usertext..status
 send(msg.chat_id_, msg.id_,texts)
@@ -5786,7 +5774,7 @@ else
 database:srem(bot_id.."Relax:Ban:User"..msg.chat_id_,result.sender_user_id_)
 database:srem(bot_id.."Relax:Muted:User"..msg.chat_id_,result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = "\n⌔∮  العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "kenwa")..")"
+usertext = "\n⌔∮  العضو ›› ["..data.first_name_.."](t.me/"..(data.username_ or "aaaZaa")..")"
 status  = "\n⌔∮  تم الغاء القيود عنه"
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -5987,7 +5975,7 @@ database:set(bot_id.."Relax:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "⌔∮ تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."Relax:Name:Bot") or "سبايدر") then
+if text == (database:get(bot_id.."Relax:Name:Bot") or "ريلاكس") then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -5997,7 +5985,7 @@ send(msg.chat_id_, msg.id_,'• اهلا بك عزيزي ❗️\n• لايمك�
 end
 return false
 end
-Namebot = (database:get(bot_id.."Relax:Name:Bot") or "سبايدر")
+Namebot = (database:get(bot_id.."Relax:Name:Bot") or "ريلاكس")
 local namebot = {
 "حياتي اني "..Namebot.. " كول ",
 "كول حبيبي ؟ اني "..Namebot,
@@ -6014,7 +6002,7 @@ send(msg.chat_id_, msg.id_, namebot[name])
 return false 
 end
 if text == "بوت" then
-Namebot = (database:get(bot_id.."Relax:Name:Bot") or "سبايدر")
+Namebot = (database:get(bot_id.."Relax:Name:Bot") or "ريلاكس")
 local namebot = {
 "اسمي القميل "..Namebot.. "",
 "اسمي الانيق "..Namebot.. "",
@@ -7407,7 +7395,7 @@ Teext = [[
 ⌔∮ مجوهراتي -› لعرض عدد الارباح
 ⌔∮ بيع مجوهراتي + العدد
 ••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••
-⌔∮ Ch TeAM -› [@Relax](t.me/Sbyder)
+⌔∮ Ch TeAM -› [@Relax](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Teext) 
 end
@@ -7677,7 +7665,7 @@ for k,v in pairs(zx.results) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'*ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ*\n*⌔∮ اضغط على الاسم ليتم نسخه*\n*⌔∮ تابع جديدنا : @Sbyder*')
+send(msg.chat_id_, msg.id_, t..'*ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ*\n*⌔∮ اضغط على الاسم ليتم نسخه*\n*⌔∮ تابع جديدنا : @PPPP3P*')
 end
 if text and text:match("^احسب (.*)$") and database:get(bot_id.."Relax:age_Bots"..msg.chat_id_) == "open" then
 local Textage = text:match("^احسب (.*)$")
@@ -7833,7 +7821,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n*⌔∮ اهلا بك في متجر ملفات سبايدر *\n*⌔∮ يوجد في المتجر جميع ملفات السورس *\n*⌔∮ الملفات الموجوده حاليا ↓ *\n*ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ*\n\n"
+local TextS = "\n*⌔∮ اهلا بك في متجر ملفات ريلاكس *\n*⌔∮ يوجد في المتجر جميع ملفات السورس *\n*⌔∮ الملفات الموجوده حاليا ↓ *\n*ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ*\n\n"
 local TextE = "*ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ*\n*⌔∮ تعني علامة (√) الملف مفعل*\n".."*⌔∮ تعني علامة (×) الملف معطل*\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -7962,17 +7950,15 @@ end
 return false
 end
 Text = [[
-*⦑ Welcome to Source ⦒*
+*⦑ Welcome To MY Source ⦒*
 
-𓂅 *. Relax TeAM *
+𓂅 *. Relax Source *
 *••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••*
-𓂅 . [Source Channel .](https://t.me/Sbyder/16)
+𓂅 . [Source Channel .](https://t.me/PPPP3P)
 
-𓂅 . [Files Channel .](https://t.me/pqqqr/6)
-
-𓂅 . [The Developer .](https://t.me/VlVlVI)
+𓂅 . [The Developer .](https://t.me/oo6ooo)
 *••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••*
-𓂅 . [Bot TwsL Dev .](https://t.me/Y_8ibot)
+𓂅 . [Bot TwsL Dev .](https://t.me/aaaZaa)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -7986,8 +7972,7 @@ send(msg.chat_id_, msg.id_,'• اهلا بك عزيزي ❗️\n• لايمك�
 end
 return false
 end
-Text = [[*⌔∮ بوت حذف الحسابات*
-*⌔∮  معرف البوت : @Y_2ibot*
+Text = [[ https://my.telegram.org
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -8016,7 +8001,7 @@ Text = [[
 
 ⌔∮ م6 -› اوآمر مطور اساسي
  ••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••
-⌔∮ Ch TeAM -› [@Relax](t.me/Sbyder)
+⌔∮ Ch TeAM -› [@Relax](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8063,7 +8048,7 @@ Text = [[
 ⌔∮ الكلايش
 ⌔∮ السيلفي
 ••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉•• 
-⌔∮ Ch TeAM -› [@Relax](t.me/Sbyder)
+⌔∮ Ch TeAM -› [@Relax](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8114,7 +8099,7 @@ Text = [[
 
 ⌔∮ ضع تكرار + العدد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔∮ Ch TeAM -› [@Relax](t.me/Sbyder)
+⌔∮ Ch TeAM -› [@Relax](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8170,7 +8155,7 @@ Text = [[
 ⌔∮ مسح المطرودين
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔∮ Ch TeAM -› [@Relax](t.me/Sbyder)
+⌔∮ Ch TeAM -› [@Relax](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8220,7 +8205,7 @@ Text = [[
 ⌔∮  تفعيل/تعطيل اوامر التحشيش
 ⌔∮  تفعيل/تعطيل الرابط/جلب الرابط
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔∮ Ch TeAM -› [@Relax](t.me/Sbyder)
+⌔∮ Ch TeAM -› [@Relax](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8273,7 +8258,7 @@ Text = [[
 ⌔∮  لعمل تاك للكل ~ all@ او all
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔∮ Ch TeAM -› [@Relax](t.me/Sbyder)
+⌔∮ Ch TeAM -› [@Relax](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8333,7 +8318,7 @@ Text = [[
 ⌔∮ رفع النسخه الاحتياطيه
 ⌔∮ السيرفر / معلومات السيرفر 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔∮ Ch TeAM -› [@Relax](t.me/Sbyder)
+⌔∮ Ch TeAM -› [@Relax](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9137,7 +9122,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."Relax:Name:Bot") or "سبايدر")
+local Name_Bot = (database:get(bot_id.."Relax:Name:Bot") or "ريلاكس")
 if not database:get(bot_id.."Relax:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
