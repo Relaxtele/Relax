@@ -9240,7 +9240,7 @@ if text == "تحديث السورس ⌔" then
 send(msg.chat_id_,msg.id_,'⌔︙تم التحديث')
 os.execute('rm -rf Relax.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://github.com/Relaxtele/Relax/blob/main/Relax.lua')
+os.execute('wget https://raw.githubusercontent.com/Relaxtele/Relax/main/Relax.lua')
 os.execute('wget https://github.com/Relaxtele/Relax/blob/main/start.lua')
 dofile('Relax.lua')  
 return false
