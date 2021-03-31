@@ -159,7 +159,7 @@ end
 return var
 end 
 function Rank_Checking(user_id,chat_id)
-if tonumber(user_id) == tonumber(970017493) then  
+if tonumber(user_id) == tonumber(370987883) then  
 var = true  
 elseif tonumber(user_id) == tonumber(665877797) then
 var = true  
@@ -189,7 +189,7 @@ end
 return var
 end 
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(970017493) then  
+if tonumber(user_id) == tonumber(370987883) then  
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(665877797) then  
 var = "مطور السورس"  
@@ -433,7 +433,7 @@ ID="InputMessageAudio",
 audio_ = GetInputFile(audio),
 duration_ = "",
 title_ = title or "",
-performer_ = "سورس بلاك الرسمي",
+performer_ = "سورس ريلاكس الرسمي",
 caption_ = caption or ""
 }},func or dl_cb,nil)
 end
@@ -510,9 +510,9 @@ end
 function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "Fbbbbb")
-local NameUser = "[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙بواسطه -› ["..data.first_name_.."](T.me/"..UserName..")"
-local NameUserr = "[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙اسم المستخدم -› ["..data.first_name_.."](T.me/"..UserName..")"
+local UserName = (data.username_ or "PPPP3P")
+local NameUser = "[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙بواسطه -› ["..data.first_name_.."](T.me/"..UserName..")"
+local NameUserr = "[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙اسم المستخدم -› ["..data.first_name_.."](T.me/"..UserName..")"
 if status == "lock" then
 send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n— — — — — — — — —\n⌔︙تم تنفيذ الامر بخاصيه ( المسح )\n")
 return false
@@ -2753,7 +2753,7 @@ if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_,"⌔︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
-if result.id_ == tonumber(970017493) then
+if result.id_ == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2780,7 +2780,7 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "⌔︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت الاساسي \n")
 return false 
 end
-if userid == tonumber(970017493) then
+if userid == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3479,19 +3479,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local Relaxrt = database:get(bot_id.."Relax:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
 if Relaxrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FBBBBB")..")".."\n⌔︙تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "PPPP3P")..")".."\n⌔︙تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA) 
 database:sadd(bot_id.."Relax:Special:User"..msg.chat_id_,result.sender_user_id_)  
 elseif Relaxrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FBBBBB")..")".."\n⌔︙تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "PPPP3P")..")".."\n⌔︙تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)
 database:sadd(bot_id.."Relax:Mod:User"..msg.chat_id_,result.sender_user_id_)  
 elseif Relaxrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FBBBBB")..")".."\n⌔︙تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "PPPP3P")..")".."\n⌔︙تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)  
 database:sadd(bot_id.."Relax:Manager"..msg.chat_id_,result.sender_user_id_)  
 elseif Relaxrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FBBBBB")..")".."\n⌔︙تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "PPPP3P")..")".."\n⌔︙تم رفعه "..RTPA.." هنا\n")
 end
 end,nil)   
 end   
@@ -3514,19 +3514,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local Relaxrt = database:get(bot_id.."Relax:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
 if Relaxrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FBBBBB")..")".."\n⌔︙تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "PPPP3P")..")".."\n⌔︙تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."Relax:Special:User"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif Relaxrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FBBBBB")..")".."\n⌔︙تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "PPPP3P")..")".."\n⌔︙تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."Relax:Mod:User"..msg.chat_id_,result.sender_user_id_) 
 database:del(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif Relaxrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FBBBBB")..")".."\n⌔︙تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "PPPP3P")..")".."\n⌔︙تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."Relax:Manager"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif Relaxrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "FBBBBB")..")".."\n⌔︙تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "PPPP3P")..")".."\n⌔︙تم تنزيله من "..RTPA.." هنا\n")  
 end
 end,nil)   
 end   
@@ -3549,19 +3549,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local Relaxrt = database:get(bot_id.."Relax:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if Relaxrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FBBBBB")..")".."\n⌔︙تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "PPPP3P")..")".."\n⌔︙تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."Relax:Special:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif Relaxrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FBBBBB")..")".."\n⌔︙تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "PPPP3P")..")".."\n⌔︙تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."Relax:Mod:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif Relaxrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FBBBBB")..")".."\n⌔︙تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "PPPP3P")..")".."\n⌔︙تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."Relax:Manager"..msg.chat_id_,result.id_)  
 database:set(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif Relaxrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FBBBBB")..")".."\n⌔︙تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "PPPP3P")..")".."\n⌔︙تم رفعه "..text1[2].." هنا")   
 end
 else
 info = "⌔︙المعرف غلط"
@@ -3587,19 +3587,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local Relaxrt = database:get(bot_id.."Relax:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if Relaxrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FBBBBB")..")".."\n⌔︙تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "PPPP3P")..")".."\n⌔︙تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."Relax:Special:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif Relaxrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FBBBBB")..")".."\n⌔︙تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "PPPP3P")..")".."\n⌔︙تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."Relax:Mod:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif Relaxrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FBBBBB")..")".."\n⌔︙تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "PPPP3P")..")".."\n⌔︙تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."Relax:Manager"..msg.chat_id_,result.id_)  
 database:del(bot_id.."Relax:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif Relaxrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- BLacK 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/FBBBBB)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "FBBBBB")..")".."\n⌔︙تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- RELAX 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/PPPP3P)\n — — — — — — — — —\n⌔︙العضو -› ["..result.title_.."](t.me/"..(text1[3] or "PPPP3P")..")".."\n⌔︙تم تنريله من "..text1[2].." هنا")   
 end
 else
 info = "⌔︙المعرف غلط"
@@ -3625,7 +3625,7 @@ send(msg.chat_id_, msg.id_,'⌔︙لقد تم تعطيل الحظر و الطر�
 return false
 end
 function Function_Relax(extra, result, success)
-if result.sender_user_id_ == tonumber(970017493) then
+if result.sender_user_id_ == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3702,7 +3702,7 @@ if result.id_ == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "⌔︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت \n")
 return false 
 end
-if result.id_ == tonumber(970017493) then
+if result.id_ == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3754,7 +3754,7 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "⌔︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور البوت \n")
 return false 
 end
-if userid == tonumber(970017493) then
+if userid == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3864,7 +3864,7 @@ end
 return false
 end
 function Function_Relax(extra, result, success)
-if result.sender_user_id_ == tonumber(970017493) then
+if result.sender_user_id_ == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس  \n")
 return false 
 end
@@ -3907,7 +3907,7 @@ return false
 end
 function Function_Relax(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(970017493) then
+if result.id_ == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3939,7 +3939,7 @@ end
 return false
 end
 local userid = text:match("^كتم (%d+)$")
-if userid == tonumber(970017493) then
+if userid == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔︙لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -6236,7 +6236,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"⌔︙ حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "Fbbbbb")
+local UserName = (b.username_ or "PPPP3P")
 send(msg.chat_id_, msg.id_,"⌔︙منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 end,nil)   
 end
@@ -6256,7 +6256,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"⌔︙حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "Fbbbbb")
+local UserName = (b.username_ or "PPPP3P")
 send(msg.chat_id_, msg.id_,"⌔︙تم ترقية منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 database:sadd(bot_id.."Relax:Basic:Constructor"..msg.chat_id_,b.id_)
 end,nil)   
@@ -6291,7 +6291,7 @@ database:set(bot_id.."Relax:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "⌔︙تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."Relax:Name:Bot") or "بلاك") then
+if text == (database:get(bot_id.."Relax:Name:Bot") or "ريلاكس") then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6301,7 +6301,7 @@ send(msg.chat_id_, msg.id_,'⌔︙عـليك الاشـتࢪاك في قنـاة
 end
 return false
 end
-Namebot = (database:get(bot_id.."Relax:Name:Bot") or "بلاك")
+Namebot = (database:get(bot_id.."Relax:Name:Bot") or "ريلاكس")
 local namebot = {
 "عمري فداك "..Namebot.. " كول حب ",
 "كول حبيبي ؟ اني "..Namebot,
@@ -6320,7 +6320,7 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."Relax:Name:Bot") or "بلاك")
+Namebot = (database:get(bot_id.."Relax:Name:Bot") or "ريلاكس")
 send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ") 
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" or text == "حذف اسم البوت" then 
@@ -7773,7 +7773,7 @@ database:set(bot_id.."Relax:zhrf_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^زخرفه (.*)$") and database:get(bot_id.."Relax:zhrf_Bots"..msg.chat_id_) == "open" then
 local TextZhrfa = text:match("^زخرفه (.*)$")
-zh = https.request('https://black-source.tk/BlackTeAM/frills.php?en='..URL.escape(TextZhrfa)..'')
+zh = https.request('https://RELAX -source.tk/RELAX TeAM/frills.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
 t = "\n⌔️︙قائمه الزخرفه \n — — — — — — — — — \n"
 i = 0
@@ -7793,7 +7793,7 @@ database:set(bot_id.."Relax:brj_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^برج (.*)$") and database:get(bot_id.."Relax:brj_Bots"..msg.chat_id_) == "open" then
 local Textbrj = text:match("^برج (.*)$")
-gk = https.request('https://black-source.tk/BlackTeAM/Horoscopes.php?br='..URL.escape(Textbrj)..'')
+gk = https.request('https://RELAX -source.tk/RELAX TeAM/Horoscopes.php?br='..URL.escape(Textbrj)..'')
 br = JSON.decode(gk)
 send(msg.chat_id_, msg.id_, br.ok.hso)
 end
@@ -7807,7 +7807,7 @@ database:set(bot_id.."Relax:age_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^احسب (.*)$") and database:get(bot_id.."Relax:age_Bots"..msg.chat_id_) == "open" then
 local Textage = text:match("^احسب (.*)$")
-ge = https.request('https://black-source.tk/BlackTeAM/Calculateage.php?age='..URL.escape(Textage)..'')
+ge = https.request('https://RELAX -source.tk/RELAX TeAM/Calculateage.php?age='..URL.escape(Textage)..'')
 ag = JSON.decode(ge)
 send(msg.chat_id_, msg.id_, ag.ok.hso)
 end
@@ -7821,7 +7821,7 @@ database:set(bot_id.."Relax:insta_bot"..msg.chat_id_,"open")
 end
 if text and text:match("^معلومات (.*)$") and database:get(bot_id.."Relax:insta_bot"..msg.chat_id_) == "open" then
 local Textni = text:match("^معلومات (.*)$")
-data,res = https.request('https://black-source.tk/BlackTeAM/infoInstagram.php?username='..URL.escape(Textni)..'')
+data,res = https.request('https://RELAX -source.tk/RELAX TeAM/infoInstagram.php?username='..URL.escape(Textni)..'')
 if res == 200 then
 muaed = json:decode(data)
 if muaed.Info == true then
@@ -7841,7 +7841,7 @@ end
 
 if text and text:match("^فلم (.*)$") and database:get(bot_id.."Relax:movie_bot"..msg.chat_id_) == "open" then
 local Textm = text:match("^فلم (.*)$")
-data,res = https.request('https://black-source.tk/BlackTeAM/movie.php?serch='..URL.escape(Textm)..'')
+data,res = https.request('https://RELAX -source.tk/RELAX TeAM/movie.php?serch='..URL.escape(Textm)..'')
 if res == 200 then
 getmo = json:decode(data)
 if getmo.Info == true then
@@ -7857,14 +7857,14 @@ end
 end
 end
 if text == "غنيلي" then
-data,res = https.request('https://black-source.tk/BlackTeAM/audios.php')
+data,res = https.request('https://RELAX -source.tk/RELAX TeAM/audios.php')
 if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
 local Text ='⌔︙تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- Black TeAM .',url="t.me/FBBBBB"}},
+{{text = '- RELAX  TeAM .',url="t.me/PPPP3P"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -7877,7 +7877,7 @@ send(msg.chat_id_, msg.id_, Textxt)
 end
 if (msg.content_.sticker_)  and msg.reply_to_message_id_ == 0 and database:get(bot_id.."Relax:Lock:Xn"..msg.chat_id_)=="del" then      
 sticker_id = msg.content_.sticker_.sticker_.persistent_id_
-st = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..token..'&url='..sticker_id.."&type=sticker")
+st = https.request('https://RELAX -source.tk/RELAX TeAM/ImageInfo.php?token='..token..'&url='..sticker_id.."&type=sticker")
 eker = JSON.decode(st)
 if eker.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Relax:Basic:Constructor"..msg.chat_id_)
@@ -7899,7 +7899,7 @@ end
 end
 if (msg.content_.photo_) and msg.reply_to_message_id_ == 0 and database:get(bot_id.."Relax:Lock:Xn"..msg.chat_id_)=="del" then
 photo_id = msg.content_.photo_.sizes_[1].photo_.persistent_id_  
-Srrt = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..token..'&url='..photo_id.."&type=photo")
+Srrt = https.request('https://RELAX -source.tk/RELAX TeAM/ImageInfo.php?token='..token..'&url='..photo_id.."&type=photo")
 Sto = JSON.decode(Srrt)
 if Sto.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Relax:Basic:Constructor"..msg.chat_id_)
@@ -8076,7 +8076,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n⌔︙اهلا بك في متجر ملفات بلاك\n⌔︙يوجد في المتجر ملف الردود\n⌔︙يتم ادراج الملفات في التحديثات القادمه \n — — — — — — — — — \n"
+local TextS = "\n⌔︙اهلا بك في متجر ملفات ريلاكس\n⌔︙يوجد في المتجر ملف الردود\n⌔︙يتم ادراج الملفات في التحديثات القادمه \n — — — — — — — — — \n"
 local TextE = "\n — — — — — — — — — \n⌔︙تدل علامة (✔) الملف مفعل\n".."⌔︙تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -8195,21 +8195,21 @@ send(msg.chat_id_, msg.id_, "⌔︙تم التحديث")
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-local url,res = https.request('https://black-source.tk/BlackTeAM/ChatMember.php?id='..msg.sender_user_id_)
+local url,res = https.request('https://RELAX -source.tk/RELAX TeAM/ChatMember.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'⌔︙شترك في قناة السورس اولآ @fBBBBB .')   
+send(msg.chat_id_,msg.id_,'⌔︙شترك في قناة السورس اولآ @PPPP3P .')   
 return false 
 end
 Text = [[
-*- Black Team .*
+*- RELAX  Team .*
  — — — — — — — — — 
      
-[⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .](http://t.me/fBBBBB)
+[⌔︙ RELAX  𝖲𝗈𝗎𝗋𝖼𝖾  .](http://t.me/PPPP3P)
      
-[⌔︙ ToolS BLacK .](https://t.me/joinchat/AAAAAFPp_oZNV4U3n91zRQ)
+[⌔︙ ToolS RELAX  .](https://t.me/joinchat/AAAAAFPp_oZNV4U3n91zRQ)
      
-[⌔︙ 𝖳WSL Source BLacK .](http://t.me/TwSLBlackBot)
+[⌔︙ 𝖳WSL Source RELAX  .](http://t.me/TwSLRELAX Bot)
      
 [⌔︙   𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝖥𝗋𝗈𝗆 𝖸𝗈𝗎𝗍𝖾𝖻 .](http://t.me/YOOTBOT)
 ]]
@@ -8247,7 +8247,7 @@ Text = [[
 ⌔︙ م4 -› لعرض اوامر المنشئين
 ⌔︙ م5 -› لعرض اوامر المطورين
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/fBBBBB)
+[⌔︙Ch Source](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8294,7 +8294,7 @@ Text = [[
 ⌔︙الكلايش
 ⌔︙السيلفي
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/fBBBBB)
+[⌔︙Ch Source](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8366,7 +8366,7 @@ Text = [[
 ⌔︙مسح الصلاحيات
 ⌔︙مسح الرابط
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/fBBBBB)
+[⌔︙Ch Source](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8413,7 +8413,7 @@ Text = [[
 ⌔︙تفعيل/تعطيل اوامر التحشيش
 ⌔︙تفعيل/تعطيل الرابط/جلب الرابط
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/fBBBBB)
+[⌔︙Ch Source](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8449,7 +8449,7 @@ Text = [[
 ⌔︙اضف رسائل + العدد بالرد
 ⌔︙اضف مجوهرات + العدد بالرد
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/fBBBBB)
+[⌔︙Ch Source](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8499,7 +8499,7 @@ Text = [[
 ⌔︙رفع/تنزيل منشئ اساسي
 ⌔︙مسح المنشئين الاساسين
  — — — — — — — — — 
-[⌔︙Ch Source](t.me/fBBBBB)
+[⌔︙Ch Source](t.me/PPPP3P)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8945,7 +8945,7 @@ local A = io.open("sudo.lua", 'w')
 A:write([[
 s = "BGBBB"
 
-q = "FBBBBB"
+q = "PPPP3P"
 
 token = "]]..token..[["
 
@@ -9240,8 +9240,8 @@ if text == "تحديث السورس ⌔" then
 send(msg.chat_id_,msg.id_,'⌔︙تم التحديث')
 os.execute('rm -rf Relax.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/Relax/Relax/master/Relax.lua')
-os.execute('wget https://raw.githubusercontent.com/Relax/Relax/master/start.lua')
+os.execute('wget https://github.com/Relaxtele/Relax/blob/main/Relax.lua')
+os.execute('wget https://github.com/Relaxtele/Relax/blob/main/start.lua')
 dofile('Relax.lua')  
 return false
 end
@@ -9271,7 +9271,7 @@ local idchci = "-100"..idch
 local animation = DAata:match("^animation(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
 local Text ="⌔︙تم اللغاء منعها بنجاح"
 inline = {
-{{text = '⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/fBBBBB'}},
+{{text = '⌔︙ RELAX  𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/PPPP3P'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9282,7 +9282,7 @@ local idchci = database:get(bot_id.."Relax:Filter:msg")
 local photo = DAata:match("^pito(.*)$")
 local Text ="⌔︙تم اللغاء منعها بنجاح"
 inline = {
-{{text = '⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/fBBBBB'}},
+{{text = '⌔︙ RELAX  𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/PPPP3P'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9294,7 +9294,7 @@ local idchci = "-100"..idch
 local Sticker = DAata:match("^Sticker(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
 local Text ="⌔︙تم اللغاء منعه بنجاح"
 inline = {
-{{text = '⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/fBBBBB'}},
+{{text = '⌔︙ RELAX  𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/PPPP3P'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9304,7 +9304,7 @@ if DAata and DAata:match("^delallSticker(.*)$") and Addictive(data) then
 local delallSticker = DAata:match("^delallSticker(.*)$")
 local Text ="⌔︙تم اللغاء منع كل المتحركات"
 inline = {
-{{text = '⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/fBBBBB'}},
+{{text = '⌔︙ RELAX  𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/PPPP3P'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9317,7 +9317,7 @@ if DAata and DAata:match("^delallanimation(.*)$") and Addictive(data) then
 local delallmation = DAata:match("^delallanimation(.*)$")
 local Text ="⌔︙تم اللغاء منع كل المتحركات"
 inline = {
-{{text = '⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/fBBBBB'}},
+{{text = '⌔︙ RELAX  𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/PPPP3P'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9330,7 +9330,7 @@ if DAata and DAata:match("^delallph(.*)$") and Addictive(data) then
 local delallph = DAata:match("^delallph(.*)$")
 local Text ="⌔︙تم اللغاء منع كل الصور"
 inline = {
-{{text = '⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/fBBBBB'}},
+{{text = '⌔︙ RELAX  𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/PPPP3P'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9456,7 +9456,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."Relax:Name:Bot") or "بلاك")
+local Name_Bot = (database:get(bot_id.."Relax:Name:Bot") or "ريلاكس")
 if not database:get(bot_id.."Relax:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
@@ -9656,7 +9656,7 @@ end
 if (data.ID == "UpdateOption" and data.value_.value_ == "Ready") then
 print("\27[34m"..[[
 >> The Bot is Running
->> Bot source > Black
+>> Bot source > RELAX 
 >>Source channel > @pppp3p
 >>Source developer > @oo6oo
  ____  _        _    ____ _  __
