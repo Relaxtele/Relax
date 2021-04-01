@@ -7765,15 +7765,15 @@ https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. 
 end
 if text == "تعطيل الزخرفه" and Owner(msg) then
 send(msg.chat_id_, msg.id_, '⌯ تم تعطيل الزخرفه')
-database:set(bot_id.."Relax:zhrf_Bots"..msg.chat_id_,"close")
+database:set(bot_id.."BLACKBOTSS:zhrf_Bots"..msg.chat_id_,"close")
 end
 if text == "تفعيل الزخرفه" and Owner(msg) then
 send(msg.chat_id_, msg.id_,'⌯ تم تفعيل الزخرفه')
-database:set(bot_id.."Relax:zhrf_Bots"..msg.chat_id_,"open")
+database:set(bot_id.."BLACKBOTSS:zhrf_Bots"..msg.chat_id_,"open")
 end
-if text and text:match("^زخرفه (.*)$") and database:get(bot_id.."Relax:zhrf_Bots"..msg.chat_id_) == "open" then
+if text and text:match("^زخرفه (.*)$") and database:get(bot_id.."BLACKBOTSS:zhrf_Bots"..msg.chat_id_) == "open" then
 local TextZhrfa = text:match("^زخرفه (.*)$")
-zh = https.request('https://RELAX -source.tk/RELAX TeAM/frills.php?en='..URL.escape(TextZhrfa)..'')
+zh = https.request('https://black-source.tk/BlackTeAM/frills.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
 t = "\n⌔️︙قائمه الزخرفه \n — — — — — — — — — \n"
 i = 0
@@ -7785,43 +7785,43 @@ send(msg.chat_id_, msg.id_, t..' — — — — — — — — —\n⌔︙اض
 end
 if text == "تعطيل الابراج" and Owner(msg) then
 send(msg.chat_id_, msg.id_, '⌯ تم تعطيل الابراج')
-database:set(bot_id.."Relax:brj_Bots"..msg.chat_id_,"close")
+database:set(bot_id.."BLACKBOTSS:brj_Bots"..msg.chat_id_,"close")
 end
 if text == "تفعيل الابراج" and Owner(msg) then
 send(msg.chat_id_, msg.id_,'⌯ تم تفعيل الابراج')
-database:set(bot_id.."Relax:brj_Bots"..msg.chat_id_,"open")
+database:set(bot_id.."BLACKBOTSS:brj_Bots"..msg.chat_id_,"open")
 end
-if text and text:match("^برج (.*)$") and database:get(bot_id.."Relax:brj_Bots"..msg.chat_id_) == "open" then
+if text and text:match("^برج (.*)$") and database:get(bot_id.."BLACKBOTSS:brj_Bots"..msg.chat_id_) == "open" then
 local Textbrj = text:match("^برج (.*)$")
-gk = https.request('https://RELAX -source.tk/RELAX TeAM/Horoscopes.php?br='..URL.escape(Textbrj)..'')
+gk = https.request('https://black-source.tk/BlackTeAM/Horoscopes.php?br='..URL.escape(Textbrj)..'')
 br = JSON.decode(gk)
 send(msg.chat_id_, msg.id_, br.ok.hso)
 end
 if text == "تعطيل حساب العمر" and Owner(msg) then
 send(msg.chat_id_, msg.id_, '⌯ تم تعطيل حساب العمر')
-database:set(bot_id.."Relax:age_Bots"..msg.chat_id_,"close")
+database:set(bot_id.."BLACKBOTSS:age_Bots"..msg.chat_id_,"close")
 end
 if text == "تفعيل حساب العمر" and Owner(msg) then
 send(msg.chat_id_, msg.id_,'⌯ تم تفعيل حساب العمر')
-database:set(bot_id.."Relax:age_Bots"..msg.chat_id_,"open")
+database:set(bot_id.."BLACKBOTSS:age_Bots"..msg.chat_id_,"open")
 end
-if text and text:match("^احسب (.*)$") and database:get(bot_id.."Relax:age_Bots"..msg.chat_id_) == "open" then
+if text and text:match("^احسب (.*)$") and database:get(bot_id.."BLACKBOTSS:age_Bots"..msg.chat_id_) == "open" then
 local Textage = text:match("^احسب (.*)$")
-ge = https.request('https://RELAX -source.tk/RELAX TeAM/Calculateage.php?age='..URL.escape(Textage)..'')
+ge = https.request('https://black-source.tk/BlackTeAM/Calculateage.php?age='..URL.escape(Textage)..'')
 ag = JSON.decode(ge)
 send(msg.chat_id_, msg.id_, ag.ok.hso)
 end
 if text == "تعطيل الانستا" and Owner(msg) then
 send(msg.chat_id_, msg.id_, '⌯ تم تعطيل الانستا')
-database:set(bot_id.."Relax:insta_bot"..msg.chat_id_,"close")
+database:set(bot_id.."BLACKBOTSS:insta_bot"..msg.chat_id_,"close")
 end
 if text == "تفعيل الانستا" and Owner(msg) then
 send(msg.chat_id_, msg.id_,'⌯ تم تفعيل الانستا')
-database:set(bot_id.."Relax:insta_bot"..msg.chat_id_,"open")
+database:set(bot_id.."BLACKBOTSS:insta_bot"..msg.chat_id_,"open")
 end
-if text and text:match("^معلومات (.*)$") and database:get(bot_id.."Relax:insta_bot"..msg.chat_id_) == "open" then
+if text and text:match("^معلومات (.*)$") and database:get(bot_id.."BLACKBOTSS:insta_bot"..msg.chat_id_) == "open" then
 local Textni = text:match("^معلومات (.*)$")
-data,res = https.request('https://RELAX -source.tk/RELAX TeAM/infoInstagram.php?username='..URL.escape(Textni)..'')
+data,res = https.request('https://black-source.tk/BlackTeAM/infoInstagram.php?username='..URL.escape(Textni)..'')
 if res == 200 then
 muaed = json:decode(data)
 if muaed.Info == true then
@@ -7832,16 +7832,16 @@ end
 end
 if text == "تعطيل الافلام" and Owner(msg) then
 send(msg.chat_id_, msg.id_, '⌯ تم تعطيل الافلام')
-database:set(bot_id.."Relax:movie_bot"..msg.chat_id_,"close")
+database:set(bot_id.."BLACKBOTSS:movie_bot"..msg.chat_id_,"close")
 end
 if text == "تفعيل الافلام" and Owner(msg) then
 send(msg.chat_id_, msg.id_,'⌯ تم تفعيل الافلام')
-database:set(bot_id.."Relax:movie_bot"..msg.chat_id_,"open")
+database:set(bot_id.."BLACKBOTSS:movie_bot"..msg.chat_id_,"open")
 end
 
-if text and text:match("^فلم (.*)$") and database:get(bot_id.."Relax:movie_bot"..msg.chat_id_) == "open" then
+if text and text:match("^فلم (.*)$") and database:get(bot_id.."BLACKBOTSS:movie_bot"..msg.chat_id_) == "open" then
 local Textm = text:match("^فلم (.*)$")
-data,res = https.request('https://RELAX -source.tk/RELAX TeAM/movie.php?serch='..URL.escape(Textm)..'')
+data,res = https.request('https://black-source.tk/BlackTeAM/movie.php?serch='..URL.escape(Textm)..'')
 if res == 200 then
 getmo = json:decode(data)
 if getmo.Info == true then
@@ -7857,14 +7857,14 @@ end
 end
 end
 if text == "غنيلي" then
-data,res = https.request('https://RELAX -source.tk/RELAX TeAM/audios.php')
+data,res = https.request('https://black-source.tk/BlackTeAM/audios.php')
 if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
 local Text ='⌔︙تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- RELAX  TeAM .',url="t.me/PPPP3P"}},
+{{text = '- Black TeAM .',url="t.me/FBBBBB"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -7875,15 +7875,15 @@ if text and text:match("^كول (.*)$") then
 local Textxt = text:match("^كول (.*)$")
 send(msg.chat_id_, msg.id_, Textxt)
 end
-if (msg.content_.sticker_)  and msg.reply_to_message_id_ == 0 and database:get(bot_id.."Relax:Lock:Xn"..msg.chat_id_)=="del" then      
+if (msg.content_.sticker_)  and msg.reply_to_message_id_ == 0 and database:get(bot_id.."BLACKBOTSS:Lock:Xn"..msg.chat_id_)=="del" then      
 sticker_id = msg.content_.sticker_.sticker_.persistent_id_
-st = https.request('https://RELAX -source.tk/RELAX TeAM/ImageInfo.php?token='..token..'&url='..sticker_id.."&type=sticker")
+st = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..token..'&url='..sticker_id.."&type=sticker")
 eker = JSON.decode(st)
 if eker.ok.Info == "Indecent" then
-local list = database:smembers(bot_id.."Relax:Basic:Constructor"..msg.chat_id_)
+local list = database:smembers(bot_id.."BLACKBOTSS:Basic:Constructor"..msg.chat_id_)
 t = "⌔︙ المنشئين الاساسين تعالو مخرب \n — — — — — — — — — \n"
 for k,v in pairs(list) do
-local username = database:get(bot_id.."Relax:User:Name" .. v)
+local username = database:get(bot_id.."BLACKBOTSS:User:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
