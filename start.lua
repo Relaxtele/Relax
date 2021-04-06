@@ -18,7 +18,7 @@ Write_Info_Sudo:write([[
 
 s = "oo6oo"
 
-q = "wwwuw"
+q = "wWwuw"
 
 token = "]]..Token..[["
 
