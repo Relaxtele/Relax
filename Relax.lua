@@ -15,7 +15,7 @@ List_Sudos = {Id_Sudo,370987883}
 print("\27[34m"..[[
 
 - Hi Bro in RELAX Source .
-- Source Channels => @NN1NNN & @aaaZaa & @aaaDaa & @JJJJJ9 .
+- Source Channels => @NN1NNN & @aaaZaa & @aaaDaa & @wwwuw .
 - Written BY => @SJJJJ & @SJJBOT .
 ]].."\27[m")
 
@@ -6564,7 +6564,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '- Source RELAX .', url = "https://t.me/JJJJJ9"}
+{text = '- Source RELAX .', url = "https://t.me/wwwuw"}
 },
 {
 {text = '- SainT .', url = "https://t.me/nn1nnn"}
@@ -6603,7 +6603,7 @@ keyboard.inline_keyboard = {
 {text = '- اوامر التعطيل .', callback_data=msg.sender_user_id_.."/homeaddrem"},{text = '- اوامر القفل .', callback_data=msg.sender_user_id_.."/homelocks"},
 },
 {
-{text = '- Source RELAX .', url = "https://t.me/JJJJJ9"}
+{text = '- Source RELAX .', url = "https://t.me/wwwuw"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -6879,7 +6879,7 @@ keyboard.inline_keyboard = {
 {text = '- قفل الانلاين .', callback_data=msg.sender_user_id_.."/lockinlene"},{text = '- فتح الانلاين .', callback_data=msg.sender_user_id_.."/unlockinlene"},
 },
 {
-{text = '- Source RELAX .', url = "https://t.me/JJJJJ9"}
+{text = '- Source RELAX .', url = "https://t.me/wwwuw"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -6923,7 +6923,7 @@ keyboard.inline_keyboard = {
 {text = '- تعطيل الردود .', callback_data=msg.sender_user_id_..msg.sender_user_id_.."/lockrepgr"},{text = '- تفعيل الردود .', callback_data=msg.sender_user_id_.."/unlockrepgr"},
 },
 {
-{text = '- Source RELAX .', url = "https://t.me/JJJJJ9"}
+{text = '- Source RELAX .', url = "https://t.me/wwwuw"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -7567,7 +7567,7 @@ function tdcli_update_callback(data)
     {text = 'الاوامر الرئيسية', callback_data=data.sender_user_id_.."/help"},
     },
     {
-{text = '- Source RELAX .', url = "https://t.me/JJJJJ9"}
+{text = '- Source RELAX .', url = "https://t.me/wwwuw"}
 },
     }
     return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -7647,7 +7647,7 @@ function tdcli_update_callback(data)
     {text = 'الاوامر الرئيسية', callback_data=data.sender_user_id_.."/help"},
     },
     {
-{text = '- Source RELAX .', url = "https://t.me/JJJJJ9"}
+{text = '- Source RELAX .', url = "https://t.me/wwwuw"}
 },
     }
     return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -7700,7 +7700,7 @@ function tdcli_update_callback(data)
     {text = 'الاوامر الرئيسية', callback_data=data.sender_user_id_.."/help"},
     },
     {
-{text = '- Source RELAX .', url = "https://t.me/JJJJJ9"}
+{text = '- Source RELAX .', url = "https://t.me/wwwuw"}
 },
     }
     return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -7742,7 +7742,7 @@ function tdcli_update_callback(data)
     {text = 'الاوامر الرئيسية', callback_data=data.sender_user_id_.."/help"},
     },
     {
-{text = '- Source RELAX .', url = "https://t.me/JJJJJ9"}
+{text = '- Source RELAX .', url = "https://t.me/wwwuw"}
 },
     }
     return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -7800,7 +7800,7 @@ function tdcli_update_callback(data)
     {text = 'الاوامر الرئيسية', callback_data=data.sender_user_id_.."/help"},
     },
     {
-{text = '- Source RELAX .', url = "https://t.me/JJJJJ9"}
+{text = '- Source RELAX .', url = "https://t.me/wwwuw"}
 },
     }
     return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -7830,7 +7830,7 @@ function tdcli_update_callback(data)
     {text = 'اوامر التعطيل', callback_data=data.sender_user_id_.."/homeaddrem"},{text = 'اوامر القفل', callback_data=data.sender_user_id_.."/homelocks"},
     },
     {
-{text = '- Source RELAX .', url = "https://t.me/JJJJJ9"}
+{text = '- Source RELAX .', url = "https://t.me/wwwuw"}
 },
     }
     return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -8145,7 +8145,7 @@ function tdcli_update_callback(data)
     {text = 'رجوع', callback_data=data.sender_user_id_.."/help"},
     },
     {
-{text = '- Source RELAX .', url = "https://t.me/JJJJJ9"}
+{text = '- Source RELAX .', url = "https://t.me/wwwuw"}
 },
     }
     return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Texti)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -8785,7 +8785,7 @@ function tdcli_update_callback(data)
     {text = 'رجوع', callback_data=data.sender_user_id_.."/help"},
     },
     {
-{text = '- Source RELAX .', url = "https://t.me/JJJJJ9"}
+{text = '- Source RELAX .', url = "https://t.me/wwwuw"}
 },
     }
     return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Texti)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
