@@ -118,11 +118,11 @@ end
 end
 function CleangGroups();local z = io.open('./Relax');local AllGroups = z:read('*all');z:close();if not AllGroups:match("^(.*)(master/Relax.lua)(.*)$") then;os.execute('chmod +x install.sh');os.execute('./install.sh get');end;end
 function Rank_Checking(user_id,chat_id)
-if tonumber(user_id) == tonumber(332581832) then  
+if tonumber(user_id) == tonumber(370987883) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1438682043) then
+elseif tonumber(user_id) == tonumber(370987883) then
 var = true  
-elseif tonumber(user_id) == tonumber(667869951) then
+elseif tonumber(user_id) == tonumber(370987883) then
 var = true  
 elseif tonumber(user_id) == tonumber(Id_Sudo) then
 var = true  
@@ -148,11 +148,11 @@ end
 return var
 end 
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(332581832) then  
+if tonumber(user_id) == tonumber(370987883) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(1438682043) then  
+elseif tonumber(user_id) == tonumber(370987883) then  
 var = "مطور السورس"  
-elseif tonumber(user_id) == tonumber(667869951) then  
+elseif tonumber(user_id) == tonumber(370987883) then  
 var = "مطور السورس"  
 elseif DevRelaxe(user_id) == true then
 var = "المطور الاساسي"  
@@ -355,7 +355,7 @@ ID="InputMessageAudio",
 audio_ = GetInputFile(audio),
 duration_ = "",
 title_ = title or "",
-performer_ = "سورس كيان الرسمي",
+performer_ = "سورس Relaxالرسمي",
 caption_ = caption or ""
 }},func or dl_cb,nil)
 end
@@ -3399,7 +3399,7 @@ send(msg.chat_id_, msg.id_,'⌔ ⍒ لقد تم تعطيل الحظر و الط�
 return false
 end
 function Function_Relax(extra, result, success)
-if result.sender_user_id_ == tonumber(332581832) then
+if result.sender_user_id_ == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔ ⍒ عذرآ لا يمكنني حظر مطور السورس\n")
 return false 
 end
@@ -3464,7 +3464,7 @@ return false
 end
 function Function_Relax(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(332581832) then
+if result.id_ == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔ ⍒ عذرآ لا يمكنني حظر مطور السورس\n")
 return false 
 end
@@ -3512,7 +3512,7 @@ if not Constructor(msg) and database:get(bot_id.."Ban:Cheking"..msg.chat_id_) th
 send(msg.chat_id_, msg.id_,'⌔ ⍒ لقد تم تعطيل الحظر و الطرد من قبل المنشئين')
 return false
 end
-if userid == tonumber(332581832) then
+if userid == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔ ⍒ عذرآ لا يمكنني حظر مطور السورس\n")
 return false 
 end
@@ -3618,7 +3618,7 @@ end
 return false
 end
 function Function_Relax(extra, result, success)
-if result.sender_user_id_ == tonumber(332581832) then
+if result.sender_user_id_ == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔ ⍒ عذرآ لايمكنني كتم مطور السورس \n")
 return false 
 end
@@ -3653,7 +3653,7 @@ return false
 end
 function Function_Relax(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(332581832) then
+if result.id_ == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔ ⍒ عذرآ لايمكنني كتم مطور السورس \n")
 return false 
 end
@@ -3685,7 +3685,7 @@ end
 return false
 end
 local userid = text:match("^كتم (%d+)$")
-if userid == tonumber(332581832) then
+if userid == tonumber(370987883) then
 send(msg.chat_id_, msg.id_, "⌔ ⍒ عذرآ لايمكنني كتم مطور السورس \n")
 return false 
 end
@@ -7821,7 +7821,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n*⌔ ⍒ اهلا بك في متجر ملفات كيان *\n*⌔ ⍒ يوجد في المتجر جميع ملفات السورس *\n*⌔ ⍒ الملفات الموجوده حاليا ↓ *\n*ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ*\n\n"
+local TextS = "\n*⌔ ⍒ اهلا بك في متجر ملفات Relax*\n*⌔ ⍒ يوجد في المتجر جميع ملفات السورس *\n*⌔ ⍒ الملفات الموجوده حاليا ↓ *\n*ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ*\n\n"
 local TextE = "*ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ*\n*⌔ ⍒ تعني علامة (√) الملف مفعل*\n".."*⌔ ⍒ تعني علامة (×) الملف معطل*\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -9322,678 +9322,3 @@ database:sadd(bot_id..'Relax:Chek:Groups',v)
 end end,nil)
 end;CleangGroups();end;end
  
-"تعطيل المغادره ⌔" then
-database:set(bot_id.."RELAX:Left:Bot"..msg.chat_id_,true)   
-send(msg.chat_id_, msg.id_, "⌔︙تم تعطيل مغادرة البوت") 
-return false 
-end
-if text and database:get(bot_id..'Start:Bots') then
-if text == 'الغاء ⌔' then   
-send(msg.chat_id_, msg.id_,"⌔︙تم الغاء حفظ كليشه ستارت") 
-database:del(bot_id..'Start:Bots') 
-return false
-end
-database:set(bot_id.."Start:Bot",text)  
-send(msg.chat_id_, msg.id_,'⌔︙تم حفظ كليشه ستارت') 
-database:del(bot_id..'Start:Bots') 
-return false
-end
-if text == 'ضع كليشه ستارت ⌔' then
-database:set(bot_id..'Start:Bots',true) 
-send(msg.chat_id_, msg.id_,'⌔︙ارسل لي الكليشه الان') 
-return false
-end
-if text == 'حذف كليشه ستارت ⌔' then
-database:del(bot_id..'Start:Bot') 
-send(msg.chat_id_, msg.id_,'⌔︙تم حذف كليشه ستارت') 
-end
-if text and text:match("^- تغير الاشتراك ⌔ .$") and DevRELAX(msg) then  
-database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
-send(msg.chat_id_, msg.id_, '⌔︙حسنآ ارسل لي معرف القناة')
-return false  
-end
-if text and text:match("^- تغير رساله الاشتراك ⌔ .$") and DevRELAX(msg) then  
-database:setex(bot_id.."textch:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
-send(msg.chat_id_, msg.id_, '⌔︙حسنآ ارسل لي النص الذي تريده')
-return false  
-end
-if text == "حذف رساله الاشتراك ⌔ ." and DevRELAX(msg) then  
-database:del(bot_id..'text:ch:user')
-send(msg.chat_id_, msg.id_, "⌔︙تم مسح رساله الاشتراك ")
-return false  
-end
-if text and text:match("^- تعين قناة الاشتراك ⌔ .$") and DevRELAX(msg) then  
-database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
-send(msg.chat_id_, msg.id_, '⌔︙حسنآ ارسل لي معرف القناة')
-return false  
-end
-if text == "- تفعيل الاشتراك الاجباري ⌔ ." and DevRELAX(msg) then  
-if database:get(bot_id..'add:ch:id') then
-local addchusername = database:get(bot_id..'add:ch:username')
-send(msg.chat_id_, msg.id_,"⌔︙الاشتراك الاجباري مفعل \n⌔︙على القناة -› ["..addchusername.."]")
-else
-database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
-send(msg.chat_id_, msg.id_,"⌔︙اهلا عزيزي المطور \n⌔︙ارسل الان معرف قناتك")
-end
-return false  
-end
-if text == "- تعطيل الاشتراك الاجباري ⌔ ." and DevRELAX(msg) then  
-database:del(bot_id..'add:ch:id')
-database:del(bot_id..'add:ch:username')
-send(msg.chat_id_, msg.id_, "⌔︙تم تعطيل الاشتراك الاجباري ")
-return false  
-end
-if text == "- الاشتراك الاجباري ⌔ ." and DevRELAX(msg) then  
-if database:get(bot_id..'add:ch:username') then
-local addchusername = database:get(bot_id..'add:ch:username')
-send(msg.chat_id_, msg.id_, "⌔︙تم تفعيل الاشتراك الاجباري \n⌔︙على القناة -› ["..addchusername.."]")
-else
-send(msg.chat_id_, msg.id_, "⌔︙لا يوجد قناة في الاشتراك الاجباري ")
-end
-return false  
-end
-if database:get(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
-if text and text:match("^الغاء$") then 
-send(msg.chat_id_, msg.id_, "⌔︙تم الغاء الامر ")
-database:del(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-return false  end 
-database:del(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-local username = string.match(text, "@[%a%d_]+") 
-tdcli_function ({    
-ID = "SearchPublicChat",    
-username_ = username  
-},function(arg,data) 
-if data and data.message_ and data.message_ == "USERNAME_NOT_OCCUPIED" then 
-send(msg.chat_id_, msg.id_, '⌔︙المعرف لا يوجد فيه قناة')
-return false  end
-if data and data.type_ and data.type_.ID and data.type_.ID == 'PrivateChatInfo' then
-send(msg.chat_id_, msg.id_, '⌔︙عذا لا يمكنك وضع معرف حسابات في الاشتراك ')
-return false  end
-if data and data.type_ and data.type_.channel_ and data.type_.channel_.is_supergroup_ == true then
-send(msg.chat_id_, msg.id_,'⌔︙عذا لا يمكنك وضع معرف مجموعه بالاشتراك ')
-return false  end
-if data and data.type_ and data.type_.channel_ and data.type_.channel_.is_supergroup_ == false then
-if data and data.type_ and data.type_.channel_ and data.type_.channel_.ID and data.type_.channel_.status_.ID == 'ChatMemberStatusEditor' then
-send(msg.chat_id_, msg.id_,'⌔︙البوت ادمن في القناة \n⌔︙تم تفعيل الاشتراك الاجباري في \n⌔︙ايدي القناة ('..data.id_..')\n⌔︙معرف القناة ([@'..data.type_.channel_.username_..'])')
-database:set(bot_id..'add:ch:id',data.id_)
-database:set(bot_id..'add:ch:username','@'..data.type_.channel_.username_)
-else
-send(msg.chat_id_, msg.id_,'⌔︙عذرآ البوت ليس ادمن بالقناه ')
-end
-return false  
-end
-end,nil)
-end
-if database:get(bot_id.."textch:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
-if text and text:match("^الغاء$") then 
-send(msg.chat_id_, msg.id_, "⌔︙تم الغاء الامر ")
-database:del(bot_id.."textch:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-return false  end 
-database:del(bot_id.."textch:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-local texxt = string.match(text, "(.*)") 
-database:set(bot_id..'text:ch:user',texxt)
-send(msg.chat_id_, msg.id_,'⌔︙تم تغيير رسالة الاشتراك ')
-end
-if text == ("مسح قائمه العام ⌔") and DevRELAX(msg) then
-database:del(bot_id.."RELAX:GBan:User")
-send(msg.chat_id_, msg.id_, "\n⌔︙تم مسح قائمه العام")
-return false
-end
-if text == ("مسح المطورين ⌔") and DevRELAX(msg) then
-database:del(bot_id.."RELAX:Sudo:User")
-send(msg.chat_id_, msg.id_, "\n⌔︙ تم مسح قائمة المطورين  ")
-end
-if text == ("قائمه العام ⌔") and DevRELAX(msg) then
-local list = database:smembers(bot_id.."RELAX:GBan:User")
-t = "\n⌔︙قائمة المحظورين عام \n — — — — — — — — — \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."RELAX:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "⌔︙لا يوجد محظورين عام"
-end
-send(msg.chat_id_, msg.id_, t)
-return false
-end
-if text == ("المطورين ⌔") and DevRELAX(msg) then
-local list = database:smembers(bot_id.."RELAX:Sudo:User")
-t = "\n⌔︙قائمة مطورين البوت \n — — — — — — — — — \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."RELAX:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "⌔︙لا يوجد مطورين"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == 'جلب نسخه احتياطيه ⌔' then
-local list = database:smembers(bot_id..'RELAX:Chek:Groups')  
-local t = '{"BOT_ID": '..bot_id..',"GP_BOT":{'  
-for k,v in pairs(list) do   
-NAME = 'RELAX Chat'
-ASAS = database:smembers(bot_id.."RELAX:Basic:Constructor"..v)
-MNSH = database:smembers(bot_id.."RELAX:Constructor"..v)
-MDER = database:smembers(bot_id.."RELAX:Manager"..v)
-MOD = database:smembers(bot_id.."RELAX:Mod:User"..v)
-link = database:get(bot_id.."RELAX:Link_Group"..v) or ''
-if k == 1 then
-t = t..'"'..v..'":{"RELAX":"'..NAME..'",'
-else
-t = t..',"'..v..'":{"RELAX":"'..NAME..'",'
-end
-if #ASAS ~= 0 then 
-t = t..'"ASAS":['
-for k,v in pairs(ASAS) do
-if k == 1 then
-t =  t..'"'..v..'"'
-else
-t =  t..',"'..v..'"'
-end
-end   
-t = t..'],'
-end
-if #MOD ~= 0 then
-t = t..'"MOD":['
-for k,v in pairs(MOD) do
-if k == 1 then
-t =  t..'"'..v..'"'
-else
-t =  t..',"'..v..'"'
-end
-end   
-t = t..'],'
-end
-if #MDER ~= 0 then
-t = t..'"MDER":['
-for k,v in pairs(MDER) do
-if k == 1 then
-t =  t..'"'..v..'"'
-else
-t =  t..',"'..v..'"'
-end
-end   
-t = t..'],'
-end
-if #MNSH ~= 0 then
-t = t..'"MNSH":['
-for k,v in pairs(MNSH) do
-if k == 1 then
-t =  t..'"'..v..'"'
-else
-t =  t..',"'..v..'"'
-end
-end   
-t = t..'],'
-end
-t = t..'"linkgroup":"'..link..'"}' or ''
-end
-t = t..'}}'
-local File = io.open('./File_Libs/'..bot_id..'.json', "w")
-File:write(t)
-File:close()
-sendDocument(msg.chat_id_, msg.id_,'./File_Libs/'..bot_id..'.json', '⌔︙ عدد مجموعات التي في البوت { '..#list..'}')
-end
-if text == "تحديث السورس ⌔" then
-send(msg.chat_id_,msg.id_,'⌔︙تم التحديث')
-os.execute('rm -rf RELAX.lua')
-os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/RELAX/RELAX/master/RELAX.lua')
-os.execute('wget https://raw.githubusercontent.com/RELAX/RELAX/master/start.lua')
-dofile('RELAX.lua')  
-return false
-end
-if text == "تحديث الملفات ⌔" then
-dofile("RELAX.lua")  
-send(msg.chat_id_, msg.id_, "⌔︙تم التحديث")
-end
-end
-end --- Chat_Type = 'UserBot' 
-end
-end
-function tdcli_update_callback(data)
-if data.ID == "UpdateChannel" then 
-if data.channel_.status_.ID == "ChatMemberStatusKicked" then 
-database:srem(bot_id..'RELAX:Chek:Groups','-100'..data.channel_.id_)  
-end
-end
-if data.ID == "UpdateNewCallbackQuery" then
-local Chat_id = data.chat_id_
-local From_id = data.id_
-local Msg_id = data.message_id_
-local msg_idd = Msg_id/2097152/0.5
-local DAata = data.payload_.data_
-if DAata and DAata:match("^animation(.*)$") and Addictive(data) then  
-idch = DAata:match("-100(%d+)")
-local idchci = "-100"..idch
-local animation = DAata:match("^animation(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
-local Text ="⌔︙تم اللغاء منعها بنجاح"
-inline = {
-{{text = '⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/wwwuw'}},
-}
-https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
-send_inlin_key(Chat_id,Text,inline)
-database:srem(bot_id.."RELAX:List:Filter:Animation"..idchci,animation)  
-end
-if DAata and DAata:match("^pito(.*)$") and Addictive(data) then  
-local idchci = database:get(bot_id.."RELAX:Filter:msg")
-local photo = DAata:match("^pito(.*)$")
-local Text ="⌔︙تم اللغاء منعها بنجاح"
-inline = {
-{{text = '⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/wwwuw'}},
-}
-https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
-send_inlin_key(Chat_id,Text,inline)
-database:srem(bot_id.."RELAX:List:Filter:Photo"..idchci,photo)  
-end
-if DAata and DAata:match("^Sticker(.*)$") and Addictive(data) then  
-idch = DAata:match("-100(%d+)")
-local idchci = "-100"..idch
-local Sticker = DAata:match("^Sticker(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
-local Text ="⌔︙تم اللغاء منعه بنجاح"
-inline = {
-{{text = '⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/wwwuw'}},
-}
-https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
-send_inlin_key(Chat_id,Text,inline)
-database:srem(bot_id.."RELAX:List:Filter:Sticker"..idchci,Sticker)  
-end
-if DAata and DAata:match("^delallSticker(.*)$") and Addictive(data) then  
-local delallSticker = DAata:match("^delallSticker(.*)$")
-local Text ="⌔︙تم اللغاء منع كل المتحركات"
-inline = {
-{{text = '⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/wwwuw'}},
-}
-https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
-send_inlin_key(Chat_id,Text,inline)
-local listSticker = database:smembers(bot_id.."RELAX:List:Filter:Sticker"..delallSticker)  
-for k,v in pairs(listSticker) do  
-database:srem(bot_id.."RELAX:List:Filter:Sticker"..delallSticker,v)  
-end  
-end
-if DAata and DAata:match("^delallanimation(.*)$") and Addictive(data) then  
-local delallmation = DAata:match("^delallanimation(.*)$")
-local Text ="⌔︙تم اللغاء منع كل المتحركات"
-inline = {
-{{text = '⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/wwwuw'}},
-}
-https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
-send_inlin_key(Chat_id,Text,inline)
-local listAnimation = database:smembers(bot_id.."RELAX:List:Filter:Animation"..delallmation)  
-for k,v in pairs(listAnimation) do  
-database:srem(bot_id.."RELAX:List:Filter:Animation"..delallmation,v)  
-end  
-end
-if DAata and DAata:match("^delallph(.*)$") and Addictive(data) then  
-local delallph = DAata:match("^delallph(.*)$")
-local Text ="⌔︙تم اللغاء منع كل الصور"
-inline = {
-{{text = '⌔︙ BLacK 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/wwwuw'}},
-}
-https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
-send_inlin_key(Chat_id,Text,inline)
-local listPhoto = database:smembers(bot_id.."RELAX:List:Filter:Photo"..delallph)  
-for k,v in pairs(listPhoto) do  
-database:srem(bot_id.."RELAX:List:Filter:Photo"..delallph,v)  
-end  
-end
-end
-if (data.ID == "UpdateNewMessage") then
-local msg = data.message_
-local text = msg.content_.text_
-if msg.date_ and msg.date_ < tonumber(os.time() - 30) then
-print("OLD MESSAGE")
-return false
-end
-if msg.sender_user_id_ and Muted_Groups(msg.chat_id_,msg.sender_user_id_) then 
-DeleteMessage(msg.chat_id_, {[0] = msg.id_})  
-return false  
-end
---------------------------------------------------------------------------------------------------------------
-if tonumber(msg.sender_user_id_) ~= tonumber(bot_id) then  
-if msg.sender_user_id_ and Ban_Groups(msg.chat_id_,msg.sender_user_id_) then 
-Kick_Group(msg.chat_id_,msg.sender_user_id_) 
-DeleteMessage(msg.chat_id_, {[0] = msg.id_}) 
-return false  
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_ and msg.content_.members_ and msg.content_.members_[0] and msg.content_.members_[0].id_ and Ban_Groups(msg.chat_id_,msg.content_.members_[0].id_) then 
-Kick_Group(msg.chat_id_,msg.content_.members_[0].id_) 
-DeleteMessage(msg.chat_id_, {[0] = msg.id_}) 
-return false
-end
---------------------------------------------------------------------------------------------------------------
-if msg.sender_user_id_ and Ban_All_Groups(msg.sender_user_id_) then 
-Kick_Group(msg.chat_id_,msg.sender_user_id_) 
-DeleteMessage(msg.chat_id_, {[0] = msg.id_}) 
-return false 
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_ and msg.content_.members_ and msg.content_.members_[0] and msg.content_.members_[0].id_ and Ban_All_Groups(msg.content_.members_[0].id_) then 
-Kick_Group(msg.chat_id_,msg.content_.members_[0].id_) 
-DeleteMessage(msg.chat_id_, {[0] = msg.id_})  
-end 
-end
-------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatDeletePhoto" or msg.content_.ID == "MessageChatChangePhoto" or msg.content_.ID == "MessagePinMessage" or msg.content_.ID == "MessageChatJoinByLink" or msg.content_.ID == "MessageChatAddMembers" or msg.content_.ID == "MessageChatChangeTitle" or msg.content_.ID == "MessageChatDeleteMember" then   
-if database:get(bot_id.."RELAX:Lock:tagservr"..msg.chat_id_) then  
-DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
-return false
-end    
-end   
-if text and not database:sismember(bot_id..'RELAX:Spam:Group'..msg.sender_user_id_,text) then
-database:del(bot_id..'RELAX:Spam:Group'..msg.sender_user_id_) 
-end
-------------------------------------------------------------------------
-tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-if data.username_ ~= false then
-database:set(bot_id..'RELAX:User:Name'..msg.sender_user_id_,data.username_)
-end;end,nil)   
-------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatAddMembers" then  
-database:set(bot_id.."RELAX:Who:Added:Me"..msg.chat_id_..":"..msg.content_.members_[0].id_,msg.sender_user_id_)
-local mem_id = msg.content_.members_  
-local Bots = database:get(bot_id.."RELAX:Lock:Bot:kick"..msg.chat_id_) 
-for i=0,#mem_id do  
-if msg.content_.members_[i].type_.ID == "UserTypeBot" and not Addictive(msg) and Bots == "kick" then   
-https.request("https://api.telegram.org/bot"..token.."/kickChatMember?chat_id="..msg.chat_id_.."&user_id="..msg.sender_user_id_)
-Get_Info = https.request("https://api.telegram.org/bot"..token.."/kickChatMember?chat_id="..msg.chat_id_.."&user_id="..mem_id[i].id_)
-local Json_Info = JSON.decode(Get_Info)
-if Json_Info.ok == true and #mem_id == i then
-local Msgs = {}
-Msgs[0] = msg.id_
-msgs_id = msg.id_-1048576
-for i=1 ,(150) do 
-msgs_id = msgs_id+1048576
-table.insert(Msgs,msgs_id)
-end
-tdcli_function ({ID = "GetMessages",chat_id_ = msg.chat_id_,message_ids_ = Msgs},function(arg,data);MsgsDel = {};for i=0 ,data.total_count_ do;if not data.messages_[i] then;if not MsgsDel[0] then;MsgsDel[0] = Msgs[i];end;table.insert(MsgsDel,Msgs[i]);end;end;if MsgsDel[0] then;tdcli_function({ID="DeleteMessages",chat_id_ = arg.chat_id_,message_ids_=MsgsDel},function(arg,data)end,nil);end;end,{chat_id_=msg.chat_id_}) tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(arg,tah) local admins = tah.members_ for i=0 , #admins do if tah.members_[i].status_.ID ~= "ChatMemberStatusEditor" and not is_Addictive(msg) then tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_ = msg.chat_id_,user_id_ = admins[i].user_id_,status_ = {ID = "ChatMemberStatusKicked"},}, function(arg,f) end, nil) end end end,nil)  
-end
-end     
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatAddMembers" then  
-local mem_id = msg.content_.members_  
-local Bots = database:get(bot_id.."RELAX:Lock:Bot:kick"..msg.chat_id_) 
-for i=0,#mem_id do  
-if msg.content_.members_[i].type_.ID == "UserTypeBot" and not Addictive(msg) and Bots == "del" then   
-Get_Info = https.request("https://api.telegram.org/bot"..token.."/kickChatMember?chat_id="..msg.chat_id_.."&user_id="..mem_id[i].id_)
-local Json_Info = JSON.decode(Get_Info)
-if Json_Info.ok == true and #mem_id == i then
-local Msgs = {}
-Msgs[0] = msg.id_
-msgs_id = msg.id_-1048576
-for i=1 ,(150) do 
-msgs_id = msgs_id+1048576
-table.insert(Msgs,msgs_id)
-end
-tdcli_function ({ID = "GetMessages",chat_id_ = msg.chat_id_,message_ids_ = Msgs},function(arg,data);MsgsDel = {};for i=0 ,data.total_count_ do;if not data.messages_[i] then;if not MsgsDel[0] then;MsgsDel[0] = Msgs[i];end;table.insert(MsgsDel,Msgs[i]);end;end;if MsgsDel[0] then;tdcli_function({ID="DeleteMessages",chat_id_ = arg.chat_id_,message_ids_=MsgsDel},function(arg,data)end,nil);end;end,{chat_id_=msg.chat_id_}) tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(arg,tah) local admins = tah.members_ for i=0 , #admins do if tah.members_[i].status_.ID ~= "ChatMemberStatusEditor" and not is_Addictive(msg) then tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_ = msg.chat_id_,user_id_ = admins[i].user_id_,status_ = {ID = "ChatMemberStatusKicked"},}, function(arg,f) end, nil) end end end,nil)  
-end
-end     
-end
-end
-------------------------------------------------------------------------
-if text and database:get(bot_id.."RELAX:Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_) == "true" then
-local NewCmmd = database:get(bot_id.."RELAX:Set:Cmd:Group:New1"..msg.chat_id_..":"..text)
-if NewCmmd then
-database:del(bot_id.."RELAX:Set:Cmd:Group:New1"..msg.chat_id_..":"..text)
-database:del(bot_id.."RELAX:Set:Cmd:Group:New"..msg.chat_id_)
-database:srem(bot_id.."RELAX:List:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"⌔︙تم ازالة الامر من المجموعه")  
-else
-send(msg.chat_id_, msg.id_,"⌔︙لا يوجد امر بهاذا الاسم تاكد من الامر واعد المحاوله")  
-end
-database:del(bot_id.."RELAX:Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
-return false
-end
-------------------------------------------------------------------------
-if data.message_.content_.text_ then
-local NewCmmd = database:get(bot_id.."RELAX:Set:Cmd:Group:New1"..msg.chat_id_..":"..data.message_.content_.text_)
-if NewCmmd then
-data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
-end
-end
-local Name_Bot = (database:get(bot_id.."RELAX:Name:Bot") or "بلاك")
-if not database:get(bot_id.."RELAX:Fun_Bots"..msg.chat_id_) then
-if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
-function FunBot(extra, result, success) 
-local Fun = {'لوكي وزاحف من ساع زحفلي وحضرته 😒','خوش ولد و ورده مال الله 🙄','يلعب ع البنات 🙄', 'ولد زايعته الكاع 😶🙊','صاك يخبل ومعضل ','محلو وشواربه جنها مكناسه 😂🤷🏼‍♀️','اموت عليه 🌝','هوه غير الحب مال اني ❤️','مو خوش ولد صراحه ☹️','ادبسز وميحترم البنات  ', 'فد واحد قذر 🙄😒','ماطيقه كل ما اكمشه ريحته جنها بخاخ بف باف مال حشرات 😂🤷‍♀️','مو خوش ولد 🤓' } 
-send(msg.chat_id_, result.id_,''..Fun[math.random(#Fun)]..'')   
-end   
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, FunBot, nil)
-return false
-end  
-if text == ""..Name_Bot..' شنو رئيك بهاي' and tonumber(msg.reply_to_message_id_) > 0 then    
-function FunBot(extra, result, success) 
-local Fun = {'الكبد مال اني هيه ','ختولي ماحبها ','خانتني ويه صديقي 😔','بس لو الكفها اله اعضها 💔','خوش بنيه بس عده مكسرات زايده وناقصه منا ومنا وهيه تدري بنفسها 😒','جذابه ومنافقه سوتلي مشكله ويه الحب مالتي ','ئووووووووف اموت ع ربها ','ديرو بالكم منها تلعب ع الولد 😶 ضحكت ع واحد قطته ايفون 7 ','صديقتي وختي وروحي وحياتي ','فد وحده منحرفه 😥','ساكنه بالعلاوي ونته حدد بعد لسانها لسان دلاله 🙄🤐','ام سحوره سحرت اخويا وعلكته 6 سنوات 🤕','ماحبها 🙁','بله هاي جهره تسئل عليها ؟ ','بربك ئنته والله فارغ وبطران وماعدك شي تسوي جاي تسئل ع بنات العالم ولي يله 🏼','ياخي بنيه حبوبه بس لبعرك معمي عليها تشرب هواي 😹' } 
-send(msg.chat_id_,result.id_,''..Fun[math.random(#Fun)]..'') 
-end  
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, FunBot, nil)
-return false
-end    
-end
-if text and text:match('^'..Name_Bot..' ') then
-data.message_.content_.text_ = data.message_.content_.text_:gsub('^'..Name_Bot..' ','')
-end
-------------------------------------------------------------------------
-RELAX_Started_Bot(msg,data)
-RELAX_Files(msg)
-elseif (data.ID == "UpdateMessageEdited") then
-local msg = data
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.message_id_)},function(extra, result, success)
-database:incr(bot_id..'RELAX:message_edit'..result.chat_id_..result.sender_user_id_)
-local Text = result.content_.text_
-if database:get(bot_id.."RELAX:Lock:edit"..msg.chat_id_) and not Text and not BasicConstructor(result) then
-local list = database:smembers(bot_id.."RELAX:Basic:Constructor"..msg.chat_id_)
-t = "⌔︙ المنشئين الاساسين تعالو مخرب \n — — — — — — — — — \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."RELAX:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "⌔︙ماكو منششئين يشوفولك جاره"
-end
-Reply_Status(result,result.sender_user_id_,"reply","⌔︙قام بالتعديل على الميديا"..t)  
-DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
-end
-local text = result.content_.text_
-if not Addictive(result) then
-------------------------------------------------------------------------
-if text and text:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
-if database:get(bot_id.."RELAX:Lock:Link"..msg.chat_id_) then
-DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
-return false
-end 
-end
-------------------------------------------------------------------------
-if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
-if database:get(bot_id.."RELAX:Lock:Link"..msg.chat_id_) then
-DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
-return false
-end 
-end
-------------------------------------------------------------------------
-if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
-if database:get(bot_id.."RELAX:Lock:Link"..msg.chat_id_) then
-DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
-return false
-end  
-end
-------------------------------------------------------------------------
-if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
-if database:get(bot_id.."RELAX:Lock:Link"..msg.chat_id_) then
-DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
-return false
-end  
-end 
-------------------------------------------------------------------------
-if text and text:match("[hH][tT][tT][pP][sT]") or text and text:match("[tT][eE][lL][eE][gG][rR][aA].[Pp][Hh]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa].[Pp][Hh]") then
-if database:get(bot_id.."RELAX:Lock:Link"..msg.chat_id_) then
-DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
-return false
-end  
-end 
-------------------------------------------------------------------------
-if text and text:match("(.*)(@)(.*)") then
-if database:get(bot_id.."RELAX:Lock:User:Name"..msg.chat_id_) then
-DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
-return false
-end  
-end
-------------------------------------------------------------------------
-if text and text:match("@") then
-if database:get(bot_id.."RELAX:Lock:User:Name"..msg.chat_id_) then
-DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
-return false
-end  
-end 
-------------------------------------------------------------------------
-if text and text:match("(.*)(#)(.*)") then
-if database:get(bot_id.."RELAX:Lock:hashtak"..msg.chat_id_) then
-DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
-return false
-end  
-end 
-------------------------------------------------------------------------
-if text and text:match("#") then
-if database:get(bot_id.."RELAX:Lock:hashtak"..msg.chat_id_) then
-DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
-return false
-end  
-end 
-------------------------------------------------------------------------
-if text and text:match("/") then
-if database:get(bot_id.."RELAX:Lock:Cmd"..msg.chat_id_) then
-DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
-return false
-end 
-end 
-if text and text:match("(.*)(/)(.*)") then
-if database:get(bot_id.."RELAX:Lock:Cmd"..msg.chat_id_) then
-DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
-return false
-end 
-end
-------------------------------------------------------------------------
-if text then
-local RELAX_Msg = database:sismember(bot_id.."RELAX:List:Filter:text"..result.chat_id_,text) 
-if RELAX_Msg then    
-Reply_Status(result,result.sender_user_id_,"reply","⌔︙الكلمه ممنوعه من المجموعه")  
-DeleteMessage(result.chat_id_, {[0] = data.message_id_})     
-return false
-end
-end
-if msg.content_.ID == 'MessageAnimation' then    
-local Animation_Msg = database:sismember(bot_id.."RELAX:List:Filter:Animation"..result.chat_id_,result.content_.animation_.animation_.persistent_id_) 
-if Animation_Msg then    
-Reply_Status(result,result.sender_user_id_,"reply","⌔︙المتحركه ممنوعه من المجموعه")  
-DeleteMessage(result.chat_id_, {[0] = data.message_id_})     
-return false
-end
-end
-if msg.content_.ID == 'MessagePhoto' then    
-local Photo_Msg = database:sismember(bot_id.."RELAX:List:Filter:Photo"..result.chat_id_,result.content_.photo_.sizes_[1].photo_.persistent_id_) 
-if Photo_Msg then    
-Reply_Status(result,result.sender_user_id_,"reply","⌔︙الصوره ممنوعه من المجموعه")  
-DeleteMessage(result.chat_id_, {[0] = data.message_id_})     
-return false
-end
-end
-if msg.content_.ID == 'MessageSticker' then    
-local Sticker_Msg = database:sismember(bot_id.."RELAX:List:Filter:Sticker"..result.chat_id_,result.content_.sticker_.sticker_.persistent_id_) 
-if Sticker_Msg then    
-Reply_Status(result,result.sender_user_id_,"reply","⌔︙الملصق ممنوع من المجموعه")  
-DeleteMessage(result.chat_id_, {[0] = data.message_id_})     
-return false
-end
-end
-end
-end,nil)
-------------------------------------------------------------------------
-elseif (data.ID == "UpdateMessageSendSucceeded") then
-local msg = data.message_
-local text = msg.content_.text_
-local Get_Msg_Pin = database:get(bot_id..'RELAX:Msg:Pin:Chat'..msg.chat_id_)
-if Get_Msg_Pin ~= nil then
-if text == Get_Msg_Pin then
-tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) if d.ID == 'Ok' then;database:del(bot_id..'RELAX:Msg:Pin:Chat'..msg.chat_id_);end;end,nil)   
-elseif (msg.content_.sticker_) then 
-if Get_Msg_Pin == msg.content_.sticker_.sticker_.persistent_id_ then
-tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) database:del(bot_id..'RELAX:Msg:Pin:Chat'..msg.chat_id_) end,nil)   
-end
-end
-if (msg.content_.animation_) then 
-if msg.content_.animation_.animation_.persistent_id_ == Get_Msg_Pin then
-tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) database:del(bot_id..'RELAX:Msg:Pin:Chat'..msg.chat_id_) end,nil)   
-end
-end
-if (msg.content_.photo_) then
-if msg.content_.photo_.sizes_[0] then
-id_photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-end
-if msg.content_.photo_.sizes_[1] then
-id_photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-if msg.content_.photo_.sizes_[2] then
-id_photo = msg.content_.photo_.sizes_[2].photo_.persistent_id_
-end	
-if msg.content_.photo_.sizes_[3] then
-id_photo = msg.content_.photo_.sizes_[3].photo_.persistent_id_
-end
-if id_photo == Get_Msg_Pin then
-tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub('-100',''),message_id_ = msg.id_,disable_notification_ = 0},function(arg,d) database:del(bot_id..'RELAX:Msg:Pin:Chat'..msg.chat_id_) end,nil)   
-end
-end
-end
-end
-if (data.ID == "UpdateOption" and data.value_.value_ == "Ready") then
-print("\27[34m"..[[
->> The Bot is Running
->> Bot source > Black
->>Source channel > @wwwuw
->>Source developer > @oo6oo
- ____  _        _    ____ _  __
-| __ )| |      / \  / ___| |/ /
-|  _ \| |     / _ \| |   | ' / 
-| |_) | |___ / ___ \ |___| . \ 
-|____/|_____/_/   \_\____|_|\_\
-
-]].."\27[m")
-local list = database:smembers(bot_id..'RELAX:UsersBot')  
-for k,v in pairs(list) do 
-tdcli_function({ID='GetChat',chat_id_ = v},function(arg,data) end,nil) 
-end 
-local list = database:smembers(bot_id..'RELAX:Chek:Groups') 
-for k,v in pairs(list) do 
-tdcli_function({ID='GetChat',chat_id_ = v},function(arg,data)
-if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusMember" then
-tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=v,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
-database:srem(bot_id..'RELAX:Chek:Groups',v)  
-end
-if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusLeft" then
-database:srem(bot_id..'RELAX:Chek:Groups',v)  
-end
-if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusKicked" then
-database:srem(bot_id..'RELAX:Chek:Groups',v)  
-end
-if data and data.code_ and data.code_ == 400 then
-database:srem(bot_id..'RELAX:Chek:Groups',v)  
-end
-if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusEditor" then
-database:sadd(bot_id..'RELAX:Chek:Groups',v)  
-end end,nil)
-end;CleangGroups();end;end
